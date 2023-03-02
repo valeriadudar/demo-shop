@@ -24,6 +24,21 @@ body {
 .row {
     display: flex;
 }
+.breadcrumb {
+    padding: 0 .5rem;
+}
+.breadcrumbs ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 .25rem;
+    content: "→";
+}
 [class*="col-"] {
     padding-left: 15px;
     padding-right: 15px;
